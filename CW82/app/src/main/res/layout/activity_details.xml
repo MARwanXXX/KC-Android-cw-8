@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DAD3C8"
+    tools:context=".DetailsActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="472dp"
+        android:layout_below="@+id/item_image"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="14dp"
+        app:cardBackgroundColor="#DCE9FB"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="50dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#e9e5de">
+
+            <TextView
+                android:id="@+id/item_price_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item_nutrition"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="61dp"
+                android:layout_toEndOf="@+id/brand"
+                android:text="290$"
+                android:textAlignment="center"
+                android:textColor="#3F6900"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/brand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item_nutrition"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="33dp"
+                android:layout_marginTop="65dp"
+                android:text="Price:"
+                android:textColor="#575757"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/item_nutrition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView3"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="6dp"
+                android:text="      An armchair with a comfortable, cushioned chair with and a support on each side, where you can rest your arms while you sit. Some armchairs are big enough that you can curl up and read a book in them. Armchairs are distinguished by their arms, rests built to comfortably "
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item_name_txt"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="37dp"
+                android:text="Description:"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/item_name_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="13dp"
+                android:layout_marginTop="16dp"
+                android:text="Cheese"
+                android:textColor="#3C322C"
+                android:textSize="32sp"
+                android:transitionName="nameTransition" />
+
+            <Button
+                android:id="@+id/add_cart"
+                android:layout_width="235dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/item_price_txt"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="center"
+                android:layout_marginStart="89dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="87dp"
+                android:text="Add To Cart"
+                app:cornerRadius="18dp" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item_nutrition"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="19dp"
+                android:layout_marginTop="7dp"
+                app:srcCompat="@drawable/revv" />
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/item_image"
+        android:layout_width="match_parent"
+        android:layout_height="223dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:padding="10dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:transitionName="imageTransition" />
+
+
+</RelativeLayout>
